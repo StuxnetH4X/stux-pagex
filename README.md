@@ -1,6 +1,6 @@
 # STUX PAGEX
 
-**STUX PAGEX** is a user-friendly desktop application built with Python's Tkinter library, designed to simplify PDF management tasks. Whether you need to extract specific pages, merge multiple PDFs, or secure your documents with encryption, STUX PAGEX provides an intuitive interface to handle these operations effortlessly.
+**STUX PAGEX** is a desktop application built with Python's Tkinter library, designed to provide some useful PDF handling functionality. You can use it to extract specific pages, merge multiple PDFs, or secure your documents with encryption.
 
 ## Table of Contents
 
@@ -19,9 +19,9 @@
 
 ## Demo
 
-- ![Extract Tab](https://drive.google.com/file/d/13aeDwGSGKK8GOTLtP05C0HyIvuGQZJ4q)
-- ![Merge Tab](https://drive.google.com/file/d/18aWtBeYu2TbpZwKPJbwJW0VnDUerSEeR)
-- ![Encrypt Tab](https://drive.google.com/file/d/1PAnbGiYBerJuEVEoga4yxEp4gDa2c0Qd)
+ ![Extract Tab](https://i.ibb.co/K6jQnGL/Extract.jpg)
+ ![Merge Tab](https://i.ibb.co/b3MZ1Hh/Merge.jpg)
+ ![Encrypt Tab](https://i.ibb.co/3Fc9Y52/Encrpyt.jpg)
 
 
 ## Installation
