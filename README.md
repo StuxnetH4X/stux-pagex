@@ -23,7 +23,7 @@
 
 ## Demo
 
-![STUX PAGEX Screenshot]((https://ibb.co/8MDRkBd))
+![STUX PAGEX Screenshot]([https://ibb.co/8MDRkBd])
 
 
 ## Installation
