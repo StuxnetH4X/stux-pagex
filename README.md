@@ -23,7 +23,9 @@
 
 ## Demo
 
-![STUX PAGEX Screenshot]([https://ibb.co/8MDRkBd])
+![Extract Tab](https://ibb.co/8MDRkBd)
+![Merge Tab](https://ibb.co/8MDRkBd)
+![Encrypt Tab](https://ibb.co/8MDRkBd)
 
 
 ## Installation
