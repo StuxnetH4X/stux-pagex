@@ -23,9 +23,9 @@
 
 ## Demo
 
-- ![Extract Tab](https://drive.google.com/file/d/13aeDwGSGKK8GOTLtP05C0HyIvuGQZJ4q/view?usp=sharing)
-- ![Merge Tab](https://drive.google.com/file/d/18aWtBeYu2TbpZwKPJbwJW0VnDUerSEeR/view?usp=sharing)
-- ![Encrypt Tab](https://drive.google.com/file/d/1PAnbGiYBerJuEVEoga4yxEp4gDa2c0Qd/view?usp=sharing)
+- ![Extract Tab](https://drive.google.com/file/d/13aeDwGSGKK8GOTLtP05C0HyIvuGQZJ4q)
+- ![Merge Tab](https://drive.google.com/file/d/18aWtBeYu2TbpZwKPJbwJW0VnDUerSEeR)
+- ![Encrypt Tab](https://drive.google.com/file/d/1PAnbGiYBerJuEVEoga4yxEp4gDa2c0Qd)
 
 
 ## Installation
