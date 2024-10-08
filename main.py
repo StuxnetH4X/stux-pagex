@@ -91,20 +91,39 @@ def run_merge():
     merge_pdf_file2 = merge_file_entry2.get()  
     output_pdf_file = output_pdf_file_entry.get()  
 
+    if not merge_pdf_file1 or not merge_pdf_file2:
+        messagebox.showwarning("Input Error", "Please select 2 PDF files.")
+        return
+
     try:
-        start_page = int(merge_start_range1.get())
-        end_page = int(merge_end_range1.get())
-
-        start_page1 = int(merge_start_range2.get())
-        end_page1 = int(merge_end_range2.get())
-
-        if not merge_pdf_file1 or not merge_pdf_file2:
-            messagebox.showwarning("Input Error", "Please select 2 PDF files.")
-        elif start_page < 1 or end_page < start_page or start_page1 < 1 or end_page1 < start_page1 :
-            messagebox.showwarning("Input Error", "Invalid page range.")
+        if option.get() == "Range":
+            start_page = int(merge_start_range1.get())
+            end_page = int(merge_end_range1.get())
+            if start_page < 1 or end_page < start_page:
+                messagebox.showwarning("Input Error", "Invalid page range for PDF 1.")
+                return
         else:
-            save_pdf = output_pdf_file 
-            merge_pages(merge_pdf_file1, start_page, end_page,merge_pdf_file2, start_page1, end_page1, save_pdf)
+            reader = PdfReader(merge_pdf_file1)
+            start_page = 1
+            end_page = len(reader.pages)
+
+        if option2.get() == "Range":
+            start_page1 = int(merge_start_range2.get())
+            end_page1 = int(merge_end_range2.get())
+            if start_page1 < 1 or end_page1 < start_page1:
+                messagebox.showwarning("Input Error", "Invalid page range for PDF 2.")
+                return
+        else:
+            reader1 = PdfReader(merge_pdf_file2)
+            start_page1 = 1
+            end_page1 = len(reader1.pages)
+
+        if not output_pdf_file:
+            messagebox.showwarning("Input Error", "Please specify an output PDF file.")
+            return
+
+        merge_pages(merge_pdf_file1, start_page, end_page,
+                    merge_pdf_file2, start_page1, end_page1, output_pdf_file)
     except ValueError:
         messagebox.showwarning("Input Error", "Please enter valid page numbers.")
 
