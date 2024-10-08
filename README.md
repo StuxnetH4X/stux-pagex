@@ -7,10 +7,8 @@
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+- [Usage](#usage)
 - [Contact](#contact)
 
 ## Features
@@ -18,8 +16,6 @@
 - **Extract Pages**: Select a PDF and extract a range of pages to create a new PDF.
 - **Merge PDFs**: Combine two PDF files by selecting specific page ranges or merging entire documents.
 - **Encrypt PDFs**: Protect your PDFs with a password to ensure document security.
-- **Intuitive GUI**: Easy-to-navigate interface with hover effects and clear instructions.
-- **Cross-Platform**: Compatible with Windows, macOS, and Linux.
 
 ## Demo
 
@@ -30,16 +26,11 @@
 
 ## Installation
 
-### Prerequisites
+## Dependencies
 
-- **Python 3.6 or higher**: Ensure you have Python installed on your system. You can download it from [Python's official website](https://www.python.org/downloads/).
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/STUX-PAGEX.git
-cd STUX-PAGEX
-```
+- [Python](https://www.python.org/) 3.6+
+- [Tkinter](https://docs.python.org/3/library/tkinter.html) (usually included with Python)
+- [PyPDF2](https://pypi.org/project/PyPDF2/)
 
 ### Install Dependencies
 
@@ -62,7 +53,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-*If a `requirements.txt` file is not provided, install the necessary packages manually:*
+*If you don't want to use virtual environment, directly go to terminal and run the given command:*
 
 ```bash
 pip install PyPDF2
@@ -73,8 +64,9 @@ pip install PyPDF2
 Run the application using Python:
 
 ```bash
-python stux_pagex.py
+python main.py
 ```
+To directly run the application rename `main.py` to `main.pyw`. Then directly double click on the file to run the application.
 
 ### Extract Pages
 
@@ -102,31 +94,9 @@ python stux_pagex.py
 4. Choose the destination to save the encrypted PDF.
 5. Click **Protect PDF** to apply encryption.
 
-## Dependencies
-
-- [Python](https://www.python.org/) 3.6+
-- [Tkinter](https://docs.python.org/3/library/tkinter.html) (usually included with Python)
-- [PyPDF2](https://pypi.org/project/PyPDF2/)
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/YourFeature`.
-3. Commit your changes: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature/YourFeature`.
-5. Open a pull request.
-
-Please ensure your code adheres to the project's coding standards and includes appropriate documentation.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Contact
 
-For any inquiries or support, please open an issue on [GitHub Issues](https://github.com/yourusername/STUX-PAGEX/issues) or contact [youremail@example.com](mailto:youremail@example.com).
+For any inquiries or support, please open an issue on [GitHub Issues](https://github.com/StuxnetH4X/stux-pagex/issues).
 
 ---
 
