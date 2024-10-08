@@ -87,33 +87,24 @@ def merge_pages(input_pdf, start_page, end_page, input_pdf1, start_page1, end_pa
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
 
 def run_merge():
-    merge_pdf_file1 = merge_file_entry1.get()
-    merge_pdf_file2 = merge_file_entry2.get()
-    output_pdf_file = output_pdf_file_entry.get()
+    merge_pdf_file1 = merge_file_entry1.get()  
+    merge_pdf_file2 = merge_file_entry2.get()  
+    output_pdf_file = output_pdf_file_entry.get()  
 
     try:
-        if option.get() == "Range":
-            start_page = int(merge_start_range1.get())
-            end_page = int(merge_end_range1.get())
-        else:
-            start_page = 1
-            end_page = float('inf')  
+        start_page = int(merge_start_range1.get())
+        end_page = int(merge_end_range1.get())
 
-        if option2.get() == "Range":
-            start_page1 = int(merge_start_range2.get())
-            end_page1 = int(merge_end_range2.get())
-        else:
-            start_page1 = 1
-            end_page1 = float('inf') 
+        start_page1 = int(merge_start_range2.get())
+        end_page1 = int(merge_end_range2.get())
 
         if not merge_pdf_file1 or not merge_pdf_file2:
             messagebox.showwarning("Input Error", "Please select 2 PDF files.")
-        elif (option.get() == "Range" and (start_page < 1 or end_page < start_page)) or \
-             (option2.get() == "Range" and (start_page1 < 1 or end_page1 < start_page1)):
+        elif start_page < 1 or end_page < start_page or start_page1 < 1 or end_page1 < start_page1 :
             messagebox.showwarning("Input Error", "Invalid page range.")
         else:
-            save_pdf = output_pdf_file
-            merge_pages(merge_pdf_file1, start_page, end_page, merge_pdf_file2, start_page1, end_page1, save_pdf)
+            save_pdf = output_pdf_file 
+            merge_pages(merge_pdf_file1, start_page, end_page,merge_pdf_file2, start_page1, end_page1, save_pdf)
     except ValueError:
         messagebox.showwarning("Input Error", "Please enter valid page numbers.")
 
