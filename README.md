@@ -23,9 +23,8 @@
 
 ## Demo
 
-![STUX PAGEX Screenshot](https://github.com/yourusername/STUX-PAGEX/blob/main/screenshots/demo.png)
+![STUX PAGEX Screenshot]((https://ibb.co/8MDRkBd))
 
-*Note: Replace the image link with your actual screenshot URL.*
 
 ## Installation
 
