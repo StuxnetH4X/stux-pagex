@@ -61,7 +61,7 @@ Run the application using Python:
 ```bash
 python main.py
 ```
-To directly run the application rename `main.py` to `main.pyw`. Then directly double click on the file to run the application.
+To directly run the application rename `StuxPagex.py` to `StuxPagex.pyw`. Then directly double click on the file to run the application.
 
 ### Extract Pages
 
